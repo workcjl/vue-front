@@ -27,6 +27,7 @@ export default {
     },
     getIndex() {
       axios.get('http://121.4.255.180:3000/api/index').then(({ data: { index } }) => {
+        console.log('index=>', index)
         this.index = index
       })
     }
