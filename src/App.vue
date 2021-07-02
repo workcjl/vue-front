@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     getHome() {
-      axios.get('http://127.0.0.1:3000/api/home').then(({ data: { name } }) => {
+      axios.get('http://121.4.255.180:3000/api/home').then(({ data: { name } }) => {
         this.name = name
       })
     }
