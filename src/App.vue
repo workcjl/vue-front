@@ -2,7 +2,7 @@
   <div id="app">
     <h1>您好</h1>
     <h2>主人晚上好啊!!!！</h2>
-    <h1>{{ name }}</h1>
+    <h1>{{ name }}====={{ index }}</h1>
   </div>
 </template>
 
@@ -12,7 +12,8 @@ export default {
   name: 'App',
   data() {
     return {
-      name: ''
+      name: '',
+      index: ''
     }
   },
   created() {
@@ -22,6 +23,11 @@ export default {
     getHome() {
       axios.get('http://121.4.255.180:3000/api/home').then(({ data: { name } }) => {
         this.name = name
+      })
+    },
+    getIndex() {
+      axios.get('http://121.4.255.180:3000/api/index').then(({ data: { index } }) => {
+        this.index = index
       })
     }
   }
