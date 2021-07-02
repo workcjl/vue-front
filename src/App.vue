@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <h1>您好</h1>
     <h2>主人晚上好啊!!!！</h2>
-    <h1>{{ name }}====={{ index }}</h1>
+    <h1>{{ name }}=={{ index }}</h1>
   </div>
 </template>
 
