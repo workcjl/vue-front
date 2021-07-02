@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>您好</h1>
-    <h2>主人，晚上好</h2>
+    <h2>主人，晚上好!</h2>
     <h1>{{ name }}</h1>
   </div>
 </template>
